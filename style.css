@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;700&display=swap');
+/* NavBar Selectors */
+nav{
+background-color: aqua;    
+}
+
+.navList{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+list-style-type: none;
+}
+
+.searchContainer{
+    border: 3px solid #003767;
+    width: 200px;
+    height: 25px; 
+    overflow: hidden;
+    border-radius: 15px;
+    display: flex;
+}
+
+.searchBox{
+border: 0;
+height: 15px;
+align-self: center;
+text-align: center;
+}
+
+.SearchIcon{
+width: auto;
+position: relative;
+margin-left: 5px;
+margin-top: 3px;
+height: 20px;
+}
+
+.NavIcons{
+    width: auto;
+    height: 25px;
+}
+
+.NavIconsList{
+    width: auto;
+    height: 23px;
+}
+
+.SearchListItem{
+    justify-content: center;
+}
+
+.navRight{
+    align-self: flex-end;
+}
+
+.navLeft{
+    justify-content: flex-start;
+}
+
+.boxWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    align-content: space-between;
+    /* border: 1px solid red; */
+}
+
+.boxImageBanner{
+    background: url(img/computerlab.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 110px;
+}
+
+.box{
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    margin-top: 25px;
+    border: 1.5px solid #003767;
+}
+
+.roomTitleStatus{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.roomTitle{
+    color: #003767;
+    margin-left: 20px;
+    font-family: 'Domine', serif;
+    font-size: 1.75rem;
+
+}
+
+.roomDesc{
+    color: #8E9AA2;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.65rem;
+    white-space: nowrap;
+    margin-left: 10px;
+}
+
+.availBubble{
+    display: flex;
+    background-color: #00B2CE;
+    width: 184px;
+    height: 40px;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.availBubble h2{
+    font-weight: 700;
+    font-size: 0.90rem;
+}
+
+.exploreBtn{
+    width: 150px;
+    height: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #00B2CE;
+    color: white;
+    margin-left: 10px;
+}
+
+.buttonIconsWrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+
+.roomIcon{
+    width: auto;
+    height: 25px;
+}
+
+.iconsRight{
+    justify-self: end;
+}
