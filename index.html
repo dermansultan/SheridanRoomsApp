@@ -7,7 +7,43 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<section>
+<div class="modalBox" id="modal">
+    <div class="modalContent">
+        <div class="modalImageBanner">
+            <button class="exitModal"></button>
+        </div>
+<div class="modalSubContent">
+
+    <ul class="breadcrumb">
+        <li>Home</li>
+        <li>Pictures</li>
+        <li>Summer</li>
+        <li>Italy</li>
+      </ul>
+      <div class="availBubble"><h2>Available</h2></div>
+      <select id="roomScheduleList">
+        <option value="Monday">Monday's Schedule</option>
+        <option value="Tuesday">Tuesday's Schedule</option>
+        <option value="Wednesday">Wednesday's Schedule</option>
+        <option value="Thursday">Thursday's Schedule</option>
+        <option value="Friday">Friday's Schedule</option>
+      </select>
+      <h1>J139 Features:</h1>
+
+</div>
+<div class="roomItems">
+    <!-- A tile of pictures + subtitles below -->
+</div>
+<div class="roomInfo">
+    <h1>J319</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, tempora qui voluptate perspiciatis, deserunt exercitationem debitis quae sed non dolores, autem quas! Cum aliquam deleniti excepturi provident dignissimos quidem ipsa.</p>
+    <div class="schedulePDF"></div>
+    <div class="mapAPP"></div>
+</div>
+
+    </div>
+</div>
+<section class="mainContainer">
         <ul class="navList">
         <li class="navLeft"><a><img src="img/ListviewIcon.svg" alt="ListIcons" class="NavIconsList"></a></li>
         <li class="SearchListItem"><div class="searchContainer">
@@ -28,7 +64,7 @@
             </div>
             <p class="roomDesc">This room features: 20 iMacs, 3 Kinects and a photo studio. </p>
             <div class="buttonIconsWrapper">
-            <button class="exploreBtn">Explore Room</button>
+            <button id="1" onClick="modal_Fill(this.id)" class="exploreBtn">Explore Room</button>
             <div class="iconsRight">
             <img src="/img/macIcon.svg" class="roomIcon">
             <img src="/img/camera.svg" class="roomIcon">
@@ -43,7 +79,7 @@
             </div>
             <p class="roomDesc">This room features: 20 iMacs, 3 Kinects and a photo studio. </p>
             <div class="buttonIconsWrapper">
-            <button class="exploreBtn">Explore Room</button>
+            <button id="2" onClick="modal_Fill(this.id)" class="exploreBtn">Explore Room</button>
             <div class="iconsRight">
             <img src="/img/macIcon.svg" class="roomIcon">
             <img src="/img/camera.svg" class="roomIcon">
@@ -58,13 +94,30 @@
             </div>
             <p class="roomDesc">This room features: 20 iMacs, 3 Kinects and a photo studio. </p>
             <div class="buttonIconsWrapper">
-            <button class="exploreBtn">Explore Room</button>
+            <button id="3" onClick="modal_Fill(this.id)" class="exploreBtn">Explore Room</button>
             <div class="iconsRight">
             <img src="/img/macIcon.svg" class="roomIcon">
             <img src="/img/camera.svg" class="roomIcon">
             </div>
         </div>
         </div>
+        <div class="box">
+            <div class="boxImageBanner"></div>
+            <div class="roomTitleStatus">
+                <h1 class="roomTitle">J319</h1>
+                <div class="availBubble"><h2>Available</h2></div>
+            </div>
+            <p class="roomDesc">This room features: 20 iMacs, 3 Kinects and a photo studio. </p>
+            <div class="buttonIconsWrapper">
+            <button id="4" onClick="modal_Fill(this.id)" class="exploreBtn">Explore Room</button>
+            <div class="iconsRight">
+            <img src="/img/macIcon.svg" class="roomIcon">
+            <img src="/img/camera.svg" class="roomIcon">
+            </div>
+        </div>
+        </div>
+        
+        
     </div>
 </section>
 </body>

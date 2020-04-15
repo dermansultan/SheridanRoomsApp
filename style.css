@@ -1,21 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;700&display=swap');
 /* NavBar Selectors */
-nav{
-background-color: aqua;    
+
+.modalBox{
+        display: flex;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        border-radius: 15px;
+        width: 600px;
+        height: 70vh;
+        border: 2px solid #003767;
+}
+
+
+.mainContainer{
+    overflow-x: hidden;
 }
 
 .navList{
 display: flex;
 flex-direction: row;
+overflow-x: hidden;
 justify-content: space-between;
 align-items: center;
 list-style-type: none;
 }
 
 .searchContainer{
+    display: flex;
     border: 3px solid #003767;
-    width: 200px;
-    height: 25px; 
+    width: 400px;
+    height: 45px; 
     overflow: hidden;
     border-radius: 15px;
     display: flex;
@@ -23,13 +40,17 @@ list-style-type: none;
 
 .searchBox{
 border: 0;
-height: 15px;
-align-self: center;
-text-align: center;
+padding-top: 5px;
+padding-left: 10px;
+height: 45px;
+width: 390px;
+text-align: left;
+font-size: 20px;
 }
 
 .SearchIcon{
 width: auto;
+align-self: center;
 position: relative;
 margin-left: 5px;
 margin-top: 3px;
@@ -38,16 +59,17 @@ height: 20px;
 
 .NavIcons{
     width: auto;
-    height: 25px;
+    height: 40px;
 }
 
 .NavIconsList{
     width: auto;
-    height: 23px;
+    height: 35px;
 }
 
 .SearchListItem{
     justify-content: center;
+    align-items: center;
 }
 
 .navRight{
@@ -59,11 +81,14 @@ height: 20px;
 }
 
 .boxWrapper{
+    max-width: 1500px;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    align-content: space-between;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
     /* border: 1px solid red; */
 }
 
@@ -77,10 +102,12 @@ height: 20px;
 
 .box{
     background-color: white;
-    width: 300px;
-    height: 300px;
+    width: 335px;
+    height: 335px;
     margin-top: 25px;
+    margin-left: 25px;
     border: 1.5px solid #003767;
+    justify-self: flex-start;
 }
 
 .roomTitleStatus{
