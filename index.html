@@ -7,40 +7,62 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<div class="modalBox" id="modal">
+<div class="modalWrapper" id="modalWrapper">
     <div class="modalContent">
-        <div class="modalImageBanner">
-            <button class="exitModal"></button>
+        <div class="modalImageBanner" id="modalBanner">
+            <button class="exitModal" id="exitModal">X</button>
         </div>
 <div class="modalSubContent">
 
-    <ul class="breadcrumb">
-        <li>Home</li>
-        <li>Pictures</li>
-        <li>Summer</li>
-        <li>Italy</li>
+    <ul class="modalBreadCrumb" id="modalBreadCrumb">
+        <li>J Building</li>
+        <li>Floor 3</li>
+        <li id="modalRoomCrumb">Room: 319</li>
       </ul>
-      <div class="availBubble"><h2>Available</h2></div>
-      <select id="roomScheduleList">
+      <div class="availBubbleModal"><h2 id="modalAvail">Available</h2></div>
+  </div>
+  <div class="modalDropdown">
+    <select id="roomScheduleList" class="roomScheduleList">
         <option value="Monday">Monday's Schedule</option>
         <option value="Tuesday">Tuesday's Schedule</option>
         <option value="Wednesday">Wednesday's Schedule</option>
         <option value="Thursday">Thursday's Schedule</option>
         <option value="Friday">Friday's Schedule</option>
       </select>
-      <h1>J139 Features:</h1>
+      <h1 id="modalFeature">J139 Features:</h1>
 
 </div>
 <div class="roomItems">
-    <!-- A tile of pictures + subtitles below -->
+    <!-- pictures + subtitles below -->
+    <div class="itemBox" id="itemBoxMac">
+        <img src="img/macItem.png" alt="mac icon">
+        <h3 id="modalItemMac">5 iMacs</h3> 
+    </div>
+    <div class="itemBox" id="itemBoxSolder">
+        <img src="img/solderIcon.svg" alt="Solder icon">
+        <h3 id="modalItemSolder">5 Solder Stations </h3> 
+    </div>
+    <div class="itemBox" id="itemBoxCut">
+        <img src="img/cuttingIcon.svg" alt="Cutting Station icon">
+        <h3 id="modalItemBoxCut">Cutting Stations</h3> 
+    </div>
+    <div class="itemBox" id="itemBoxCouch">
+        <img src="img/couchIcon.svg" alt="Couch icon">
+        <h3 id="modalItemCouch">A couch</h3> 
+    </div>
+    <div class="itemBox" id="itemBoxKinect">
+        <img src="img/kinectItem.png" alt="Microsoft Kinect icon">
+        <h3 id="modalItemKinect">5 Microsoft Kinects</h3> 
+    </div>
 </div>
 <div class="roomInfo">
-    <h1>J319</h1>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, tempora qui voluptate perspiciatis, deserunt exercitationem debitis quae sed non dolores, autem quas! Cum aliquam deleniti excepturi provident dignissimos quidem ipsa.</p>
-    <div class="schedulePDF"></div>
-    <div class="mapAPP"></div>
+    <h1 id="modalRoomTitle">J319</h1>
+    <p id="modalRoomDesc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, tempora qui voluptate perspiciatis, deserunt exercitationem debitis quae sed non dolores, autem quas! Cum aliquam deleniti excepturi provident dignissimos quidem ipsa.</p>
 </div>
-
+<div class="schedulePDF">
+    <img src="img/downloadbtn.svg" alt="pdfIcon">
+    <h2>Download Room J319's schedule</h2>
+</div>
     </div>
 </div>
 <section class="mainContainer">

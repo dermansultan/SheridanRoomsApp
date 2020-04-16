@@ -34,7 +34,34 @@ const rooms = [
 
     ];
 
-    function modal_Fill(clicked_id) {
+const modal = document.getElementById('modalWrapper');
+const modalCloseBtn = document.getElementById('exitModal');
+
+modalCloseBtn.addEventListener('click', modalClose);
+
+
+
+function modal_Fill(clicked_id) {
 //if blah clicked fill modal if blah clicked fill modal with this info if blah clicked fill
+modal.style.display = 'flex';
 console.log((clicked_id), "was clicked!")
+if (clicked_id === "1")
+{
+
+} else if (clicked_id === "2"){
+
+} else if (clicked_id === "3"){
+
+} else if (clicked_id === "4") {
+
+} else {
+    console.log("This could be an error who knows...")
+}
+
+
     };
+
+
+function modalClose(){
+    modal.style.display = 'none';
+}
