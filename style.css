@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;700&display=swap');
 
 /* Modal Selectors */
-
 .modalWrapper{
         display: none;
         position: fixed;
@@ -27,6 +26,10 @@
     position:absolute;
     top:0;
     right:0;
+}
+
+.exitModal:hover{
+background-color: red;
 }
 
 .modalImageBanner{

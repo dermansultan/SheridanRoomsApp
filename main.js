@@ -34,10 +34,30 @@ const rooms = [
 
     ];
 
+
+//Modal 
 const modal = document.getElementById('modalWrapper');
 const modalCloseBtn = document.getElementById('exitModal');
-
 modalCloseBtn.addEventListener('click', modalClose);
+
+//Modal Elements
+const modalBanner = document.getElementById('modalBanner');
+const breadCrumb = document.getElementById('modalBreadCrumb')
+const modalAvail = document.getElementById('modalAvail');
+const roomDropDown = document.getElementById('roomScheduleList');
+const roomFeatures = document.getElementById('modalFeature');
+//Item Boxes
+const macItemBox = document.getElementById('itemBoxMac');
+const macItemCount = document.getElementById('modalItemMac');
+const solderItemBox = document.getElementById('itemBoxsolder');
+const solderItemCount = document.getElementById('modalItemSolder');
+const cutterItemBox = document.getElementById('itemBoxCut');
+const cutterItemCount = document.getElementById('modalItemBoxCut');
+const couchItem = document.getElementById('itemBoxCouch');
+const KinectItem = document.getElementById('itemBoxKinect')
+const photoStudioItem = document.getElementById('itemBoxPhotoStudio');
+
+
 
 
 
