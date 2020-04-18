@@ -16,10 +16,10 @@
 
     <ul class="modalBreadCrumb" id="modalBreadCrumb">
         <li>J Building</li>
-        <li>Floor 3</li>
+        <li id="floor">Floor 3</li>
         <li id="modalRoomCrumb">Room: 319</li>
       </ul>
-      <div class="availBubbleModal"><h2 id="modalAvail">Available</h2></div>
+      <div class="availBubbleModal" id="availButton"><h2 id="modalAvail">Available</h2></div>
   </div>
   <div class="modalDropdown">
     <select id="roomScheduleList" class="roomScheduleList">
@@ -32,40 +32,12 @@
       <h1 id="modalFeature">J139 Features:</h1>
 
 </div>
-<div class="roomItems">
-    <!-- pictures + subtitles below -->
-    <div class="itemBox" id="itemBoxMac">
-        <img src="img/macItem.png" alt="mac icon">
-        <h3 id="modalItemMac">5 iMacs</h3> 
-    </div>
-    <div class="itemBox" id="itemBoxSolder">
-        <img src="img/solderIcon.svg" alt="Solder icon">
-        <h3 id="modalItemSolder">5 Solder Stations </h3> 
-    </div>
-    <div class="itemBox" id="itemBoxCut">
-        <img src="img/cuttingIcon.svg" alt="Cutting Station icon">
-        <h3 id="modalItemBoxCut">Cutting Stations</h3> 
-    </div>
-    <div class="itemBox" id="itemBoxCouch">
-        <img src="img/couchIcon.svg" alt="Couch icon">
-        <h3 id="modalItemCouch">A couch</h3> 
-    </div>
-    <div class="itemBox" id="itemBoxKinect">
-        <img src="img/kinectItem.png" alt="Microsoft Kinect icon">
-        <h3 id="modalItemKinect">has a Microsoft Kinect</h3> 
-    </div>
-        <div class="itemBox" id="itemBoxPhotoStudio">
-            <img src="img/kinectItem.png" alt="Microsoft Kinect icon">
-            <h3 id="modalItemPhotoStudio">has a photo studio</h3> 
-    </div>
+<div class="roomItems" id="roomItems">
+
 </div>
 <div class="roomInfo">
     <h1 id="modalRoomTitle">J319</h1>
     <p id="modalRoomDesc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, tempora qui voluptate perspiciatis, deserunt exercitationem debitis quae sed non dolores, autem quas! Cum aliquam deleniti excepturi provident dignissimos quidem ipsa.</p>
-</div>
-<div class="schedulePDF">
-    <img src="img/downloadbtn.svg" alt="pdfIcon">
-    <h2>Download Room J319's schedule</h2>
 </div>
     </div>
 </div>
@@ -85,12 +57,12 @@
         <div class="box">
             <div class="boxImageBanner"></div>
             <div class="roomTitleStatus">
-                <h1 class="roomTitle">J319</h1>
+                <h1 class="roomTitle" id="title1">J319</h1>
                 <div class="availBubble"><h2>Available</h2></div>
             </div>
-            <p class="roomDesc">This room features: 20 iMacs, 3 Kinects and a photo studio. </p>
+            <p class="roomDesc" id="roomDesc1"></p>
             <div class="buttonIconsWrapper">
-            <button id="1" onClick="modal_Fill(this.id)" class="exploreBtn">Explore Room</button>
+            <button id="0" onClick="modal_Fill(this.id)" class="exploreBtn">Explore Room</button>
             <div class="iconsRight">
             <img src="/img/macIcon.svg" class="roomIcon">
             <img src="/img/camera.svg" class="roomIcon">
@@ -100,12 +72,12 @@
         <div class="box">
             <div class="boxImageBanner"></div>
             <div class="roomTitleStatus">
-                <h1 class="roomTitle">J319</h1>
+                <h1 class="roomTitle" id="title2">J319</h1>
                 <div class="availBubble"><h2>Available</h2></div>
             </div>
-            <p class="roomDesc">This room features: 20 iMacs, 3 Kinects and a photo studio. </p>
+            <p class="roomDesc" id="roomDesc2">This room features: 20 iMacs, 3 Kinects and a photo studio. </p>
             <div class="buttonIconsWrapper">
-            <button id="2" onClick="modal_Fill(this.id)" class="exploreBtn">Explore Room</button>
+            <button id="1" onClick="modal_Fill(this.id)"  class="exploreBtn">Explore Room</button>
             <div class="iconsRight">
             <img src="/img/macIcon.svg" class="roomIcon">
             <img src="/img/camera.svg" class="roomIcon">
@@ -115,27 +87,27 @@
         <div class="box">
             <div class="boxImageBanner"></div>
             <div class="roomTitleStatus">
-                <h1 class="roomTitle">J319</h1>
+                <h1 class="roomTitle" id="title3">J319</h1>
+                <div class="UnavailBubbleModal"><h2>Unavailable</h2></div>
+            </div>
+            <p class="roomDesc" id="roomDesc3">This room features: 20 iMacs, 3 Kinects and a photo studio. </p>
+            <div class="buttonIconsWrapper">
+            <button id="2" onClick="modal_Fill(this.id)"  class="exploreBtn">Explore Room</button>
+            <div class="iconsRight">
+            <img src="/img/macIcon.svg" class="roomIcon">
+            <img src="/img/camera.svg" class="roomIcon">
+            </div>
+        </div>
+        </div>
+        <div class="box">
+            <div class="boxImageBanner"></div>
+            <div class="roomTitleStatus">
+                <h1 class="roomTitle" id="title4">J319</h1>
                 <div class="availBubble"><h2>Available</h2></div>
             </div>
-            <p class="roomDesc">This room features: 20 iMacs, 3 Kinects and a photo studio. </p>
+            <p class="roomDesc" id="roomDesc4">This room features: 20 iMacs, 3 Kinects and a photo studio. </p>
             <div class="buttonIconsWrapper">
             <button id="3" onClick="modal_Fill(this.id)" class="exploreBtn">Explore Room</button>
-            <div class="iconsRight">
-            <img src="/img/macIcon.svg" class="roomIcon">
-            <img src="/img/camera.svg" class="roomIcon">
-            </div>
-        </div>
-        </div>
-        <div class="box">
-            <div class="boxImageBanner"></div>
-            <div class="roomTitleStatus">
-                <h1 class="roomTitle">J319</h1>
-                <div class="availBubble"><h2>Available</h2></div>
-            </div>
-            <p class="roomDesc">This room features: 20 iMacs, 3 Kinects and a photo studio. </p>
-            <div class="buttonIconsWrapper">
-            <button id="4" onClick="modal_Fill(this.id)" class="exploreBtn">Explore Room</button>
             <div class="iconsRight">
             <img src="/img/macIcon.svg" class="roomIcon">
             <img src="/img/camera.svg" class="roomIcon">
